@@ -87,15 +87,9 @@ export const ProductModal: React.FC<ProductModalProps> = ({ item, onClose }) => 
   };
 
   return (
-    <>
-      {/* Backdrop */}
-      <div className="modal-overlay active" onClick={onClose} />
-
-      {/* Modal Box */}
-      <div className="modal-overlay active" style={{ pointerEvents: 'none' }}>
-        <div className="product-modal" style={{ pointerEvents: 'auto' }}>
-          
-          {/* Close Button */}
+    <div className="modal-overlay active" onClick={onClose}>
+      <div className="product-modal" onClick={(e) => e.stopPropagation()}>
+        {/* Close Button */}
           <button
             onClick={onClose}
             className="product-modal-close"
@@ -228,6 +222,5 @@ export const ProductModal: React.FC<ProductModalProps> = ({ item, onClose }) => 
 
         </div>
       </div>
-    </>
   );
 };

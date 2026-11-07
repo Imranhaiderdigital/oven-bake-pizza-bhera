@@ -157,7 +157,7 @@ export const About: React.FC = () => {
             <p className="section-description">How we maintain top-tier taste and service standards every single day.</p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '30px' }} className="why-choose-grid">
+          <div className="about-standards-grid">
             <div style={{ display: 'flex', gap: '20px' }}>
               <div style={{ width: '48px', height: '48px', borderRadius: '8px', backgroundColor: 'var(--primary-orange-light)', color: 'var(--primary-orange)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                 <Award size={22} />
@@ -242,6 +242,26 @@ export const About: React.FC = () => {
           </div>
         </div>
       </section>
+
+      <style>{`
+        .about-standards-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 30px;
+        }
+        @media (max-width: 992px) {
+          .about-standards-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+          }
+        }
+        @media (max-width: 576px) {
+          .about-standards-grid {
+            grid-template-columns: 1fr;
+            gap: 20px;
+          }
+        }
+      `}</style>
     </div>
   );
 };

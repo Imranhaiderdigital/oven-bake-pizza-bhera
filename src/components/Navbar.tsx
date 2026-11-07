@@ -21,11 +21,12 @@ export const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { totalItemsCount, setIsCartOpen } = useCart();
   const location = useLocation();
+  const isHomePage = location.pathname === '/' || location.pathname === '';
 
   // Watch scroll to toggle classes
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 40) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -33,14 +34,24 @@ export const Navbar: React.FC = () => {
     };
     
     window.addEventListener('scroll', handleScroll);
-    
-    // Call once to check initial state (e.g. on navigation to pages already scrolled)
     handleScroll();
     
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isMenuOpen]);
 
   // Close mobile drawer when route changes
   useEffect(() => {
@@ -50,7 +61,7 @@ export const Navbar: React.FC = () => {
 
   return (
     <>
-      <nav className={`navbar-wrapper ${isScrolled ? 'navbar-scrolled' : ''}`}>
+      <nav className={`navbar-wrapper ${isScrolled || !isHomePage ? 'navbar-scrolled' : ''}`}>
         <div className="container navbar-container">
           {/* Logo */}
           <Link to="/" className="logo-link">

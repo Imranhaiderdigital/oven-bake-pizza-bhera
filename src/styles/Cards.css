@@ -3,6 +3,7 @@
   display: flex;
   gap: 12px;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   padding: 10px 4px 20px 4px;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none;  /* IE and Edge */
@@ -439,5 +440,26 @@
   
   .review-card {
     padding: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .product-card-content {
+    padding: 18px;
+  }
+
+  .category-tab {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+
+  .categories-container {
+    padding-bottom: 14px;
+    gap: 8px;
   }
 }

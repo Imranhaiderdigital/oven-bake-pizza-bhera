@@ -88,7 +88,7 @@ export const Menu: React.FC = () => {
         <div className="container" style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
           
           {/* Search Input and Sort Dropdown */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 250px', gap: '20px' }} className="search-sort-row">
+          <div className="search-sort-row">
             {/* Search */}
             <div style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>
               <Search size={18} style={{ position: 'absolute', left: '16px', color: 'var(--text-muted)' }} />
@@ -193,12 +193,17 @@ export const Menu: React.FC = () => {
       {/* Food Customize Modal */}
       <ProductModal item={selectedItem} onClose={() => setSelectedItem(null)} />
 
-      {/* CSS Overrides */}
+      {/* CSS Styles */}
       <style>{`
+        .search-sort-row {
+          display: grid;
+          grid-template-columns: 1fr 250px;
+          gap: 20px;
+        }
         @media (max-width: 768px) {
           .search-sort-row {
-            grid-template-columns: 1fr !important;
-            gap: 12px !important;
+            grid-template-columns: 1fr;
+            gap: 12px;
           }
         }
       `}</style>

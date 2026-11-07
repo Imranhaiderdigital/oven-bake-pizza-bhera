@@ -142,7 +142,7 @@ export const Home: React.FC = () => {
             <p className="section-description">We serve Bhera with a commitment to absolute food safety, delicious secret recipes, and high-end services.</p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '30px' }} className="why-choose-grid">
+          <div className="why-choose-grid">
             <div style={{ padding: '30px', backgroundColor: 'var(--bg-soft)', borderRadius: 'var(--radius-lg)', textAlign: 'center', transition: 'var(--transition)' }} className="choose-card">
               <div style={{ width: '60px', height: '60px', borderRadius: '50%', backgroundColor: 'var(--primary-orange-light)', color: 'var(--primary-orange)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px auto' }}>
                 <Pizza size={28} />
@@ -195,7 +195,7 @@ export const Home: React.FC = () => {
             <p className="section-description">We serve a wide variety of meals, from fresh Italian pizzas to crispy American seekh burgers and wraps.</p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: '20px' }} className="home-categories-grid">
+          <div className="home-categories-grid">
             {[
               { id: 'pizza', name: 'Pizza', icon: '🍕', desc: 'Fresh & Cheesy' },
               { id: 'burgers', name: 'Burgers', icon: '🍔', desc: 'Crispy Zingers' },
@@ -237,7 +237,7 @@ export const Home: React.FC = () => {
             <p className="section-description">Delicious combos compiled specifically to give you the best value for your money. Grab these limited time offers!</p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '30px' }} className="home-deals-grid">
+          <div className="home-deals-grid">
             {deals.map((deal) => (
               <div key={deal.id} className="product-card" onClick={() => setSelectedItem(deal)} style={{ borderColor: 'rgba(217, 33, 33, 0.1)' }}>
                 <div className="product-card-badge">
@@ -328,7 +328,7 @@ export const Home: React.FC = () => {
             <p className="section-description" style={{ color: '#9CA3AF' }}>Get your food delivered to your doorstep in four simple steps.</p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '30px' }} className="order-steps-grid">
+          <div className="order-steps-grid">
             {[
               { step: '01', title: 'Browse Menu', desc: 'Browse our menu, select pizzas, burgers, pasta or deals.', icon: <Pizza size={24} /> },
               { step: '02', title: 'Add to Cart', desc: 'Choose sizes, add extra cheese or toppings, and check subtotal.', icon: <ShoppingBag size={24} /> },
@@ -359,7 +359,7 @@ export const Home: React.FC = () => {
             <p className="section-description">We take pride in our service. Hear from our loyal customers in Bhera city about their experience.</p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '24px' }} className="home-reviews-grid">
+          <div className="home-reviews-grid">
             {reviews.map((rev, idx) => (
               <ReviewCard key={idx} review={rev} />
             ))}
@@ -376,7 +376,7 @@ export const Home: React.FC = () => {
             <p className="section-description">Crispy crusts, melted cheese, golden chicken patties, and fresh toppings. Our gallery tells the taste story.</p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px' }} className="home-gallery-grid">
+          <div className="home-gallery-grid">
             {galleryPreviews.map((g, idx) => (
               <div key={idx} className="gallery-item" onClick={() => navigate('/gallery')}>
                 <img src={g.url} alt={g.title} className="gallery-item-img" />
@@ -521,46 +521,94 @@ export const Home: React.FC = () => {
       {/* Food Detail Modal Popup */}
       <ProductModal item={selectedItem} onClose={() => setSelectedItem(null)} />
 
-      {/* Styles for grid overrides on home */}
+      {/* Styles for grid responsiveness on home */}
       <style>{`
+        .why-choose-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 30px;
+        }
+        .home-categories-grid {
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+          gap: 20px;
+        }
+        .home-deals-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 30px;
+        }
+        .order-steps-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 30px;
+        }
+        .home-reviews-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 24px;
+        }
+        .home-gallery-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+        }
         @media (max-width: 992px) {
           .why-choose-grid {
-            grid-template-columns: repeat(2, 1fr) !important;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
           }
           .home-categories-grid {
-            grid-template-columns: repeat(3, 1fr) !important;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
           }
           .home-deals-grid {
-            grid-template-columns: 1fr !important;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+          }
+          .order-steps-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
           }
           .home-reviews-grid {
-            grid-template-columns: repeat(2, 1fr) !important;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
           }
           .home-gallery-grid {
-            grid-template-columns: repeat(2, 1fr) !important;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
           }
         }
         @media (max-width: 576px) {
           .why-choose-grid {
-            grid-template-columns: 1fr !important;
+            grid-template-columns: 1fr;
+            gap: 16px;
           }
           .choose-card {
             padding: 20px !important;
           }
           .home-categories-grid {
-            grid-template-columns: repeat(2, 1fr) !important;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+          }
+          .home-deals-grid {
+            grid-template-columns: 1fr;
+            gap: 16px;
           }
           .order-steps-grid {
-            grid-template-columns: 1fr !important;
+            grid-template-columns: 1fr;
+            gap: 16px;
           }
           .home-reviews-grid {
-            grid-template-columns: 1fr !important;
+            grid-template-columns: 1fr;
+            gap: 16px;
           }
           .home-gallery-grid {
-            grid-template-columns: 1fr !important;
+            grid-template-columns: 1fr;
+            gap: 16px;
           }
           .gallery-item {
-            aspect-ratio: 1.5 !important;
+            aspect-ratio: 1.4 !important;
           }
         }
       `}</style>

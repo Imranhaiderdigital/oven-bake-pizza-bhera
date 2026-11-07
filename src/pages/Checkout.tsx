@@ -150,7 +150,7 @@ Thank You ❤️`;
   // If order is completed successfully, show confirmation screen
   if (isOrdered) {
     return (
-      <div className="container" style={{ padding: '120px 24px 80px 24px' }}>
+      <div className="container checkout-page-container">
         <div className="checkout-steps">
           <div className="checkout-step checkout-step-active">
             <span className="checkout-step-number">✔</span>
@@ -190,7 +190,7 @@ Thank You ❤️`;
   }
 
   return (
-    <div className="container" style={{ padding: '120px 24px 80px 24px' }}>
+    <div className="container checkout-page-container">
       
       {/* Step Indicator */}
       <div className="checkout-steps">

@@ -54,7 +54,7 @@ export const Deals: React.FC = () => {
       {/* Deals Grid */}
       <section className="section">
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '30px' }} className="deals-page-grid">
+          <div className="deals-page-grid">
             {deals.map((deal) => {
               const discountPercent = deal.oldPrice
                 ? Math.round(((deal.oldPrice - deal.price) / deal.oldPrice) * 100)
@@ -113,16 +113,23 @@ export const Deals: React.FC = () => {
       {/* Food Customize Modal */}
       <ProductModal item={selectedItem} onClose={() => setSelectedItem(null)} />
 
-      {/* Grid Responsiveness override */}
+      {/* Grid Responsiveness */}
       <style>{`
+        .deals-page-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 30px;
+        }
         @media (max-width: 992px) {
           .deals-page-grid {
-            grid-template-columns: repeat(2, 1fr) !important;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
           }
         }
         @media (max-width: 576px) {
           .deals-page-grid {
-            grid-template-columns: 1fr !important;
+            grid-template-columns: 1fr;
+            gap: 20px;
           }
         }
       `}</style>
