@@ -67,7 +67,7 @@ export const menuItems: MenuItem[] = [
     description: 'Smoky chicken boti pieces, fresh onions, ripe tomatoes, and crunchy bell peppers.',
     price: 500,
     category: 'pizza',
-    image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80',
     badge: 'Chef\'s Choice',
     rating: 4.8,
     isPizza: true,
@@ -84,7 +84,7 @@ export const menuItems: MenuItem[] = [
     description: 'Spicy chicken achari, fresh onions, bell peppers, black olives, and our special achari sauce.',
     price: 500,
     category: 'pizza',
-    image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&q=80',
     badge: 'Hot',
     rating: 4.7,
     isPizza: true,
@@ -101,7 +101,7 @@ export const menuItems: MenuItem[] = [
     description: 'Thick melted layer of premium mozzarella and cheddar cheese with our special signature pizza sauce.',
     price: 500,
     category: 'pizza',
-    image: 'https://images.unsplash.com/photo-1571066811602-716837d681de?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80',
     rating: 4.6,
     isPizza: true,
     sizes: [
@@ -133,7 +133,7 @@ export const menuItems: MenuItem[] = [
     description: 'Spicy chicken or beef chunks, fresh onions, ripe tomatoes, and spicy mixed peppers.',
     price: 500,
     category: 'pizza',
-    image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=800&q=80',
     badge: 'Hot',
     rating: 4.8,
     isPizza: true,
@@ -169,7 +169,7 @@ export const menuItems: MenuItem[] = [
     description: 'Spicy chicken, onions, tomatoes, green peppers, olives, sausages, double mozzarella, and double cheese topping.',
     price: 550,
     category: 'specialities',
-    image: 'https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1544982503-9f984c14501a?auto=format&fit=crop&w=800&q=80',
     badge: 'Best Seller',
     rating: 4.9,
     isPizza: true,
@@ -220,7 +220,7 @@ export const menuItems: MenuItem[] = [
     description: 'Smoky Behary chicken kebab chunks, ring onions, green chillies, mozzarella, and special behari spices.',
     price: 1200,
     category: 'global-special',
-    image: 'https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=800&q=80',
     rating: 4.7,
     isPizza: true,
     sizes: [
@@ -265,7 +265,7 @@ export const menuItems: MenuItem[] = [
     description: 'Double crispy zinger fillets, double cheese, lettuce, tomatoes, and spicy house sauce.',
     price: 500,
     category: 'burgers',
-    image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80',
     badge: 'Hot',
     rating: 4.9
   },
@@ -275,7 +275,7 @@ export const menuItems: MenuItem[] = [
     description: 'Layered crispy zinger chicken breast fillets, cheddar cheese slices, onions, lettuce, and premium dressing.',
     price: 500,
     category: 'burgers',
-    image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1583032015879-63a23f2f8a48?auto=format&fit=crop&w=800&q=80',
     rating: 4.7
   },
   {
@@ -285,7 +285,7 @@ export const menuItems: MenuItem[] = [
     price: 600,
     oldPrice: 710,
     category: 'burgers',
-    image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=800&q=80',
     badge: 'Limited Time',
     rating: 4.6
   },
@@ -296,7 +296,7 @@ export const menuItems: MenuItem[] = [
     price: 740,
     oldPrice: 850,
     category: 'burgers',
-    image: 'https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=800&q=80',
     badge: 'Best Seller',
     rating: 4.8
   },
@@ -308,7 +308,7 @@ export const menuItems: MenuItem[] = [
     description: 'Penne pasta tossed in creamy white cheese sauce, topped with shredded crispy chicken and olives.',
     price: 800,
     category: 'pasta',
-    image: 'https://images.unsplash.com/photo-1645112411341-6c4fd023714a?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1621996346565-e3d5d62817d2?auto=format&fit=crop&w=800&q=80',
     badge: 'New',
     rating: 4.8
   },
@@ -328,7 +328,7 @@ export const menuItems: MenuItem[] = [
     description: 'Macaroni noodles cooked in white cheese sauce, seasoned chicken breast pieces, and sweet corn.',
     price: 700,
     category: 'pasta',
-    image: 'https://images.unsplash.com/photo-1645112411341-6c4fd023714a?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80',
     rating: 4.6
   },
   {
@@ -337,7 +337,7 @@ export const menuItems: MenuItem[] = [
     description: 'Large portion of fries smothered with hot cheese sauce, shredded chicken chunks, jalapeños, and olives.',
     price: 650,
     category: 'pasta',
-    image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=800&q=80',
     badge: 'Best Seller',
     rating: 4.9
   },
@@ -358,7 +358,7 @@ export const menuItems: MenuItem[] = [
     description: 'Crispy fried zinger chicken strips wrapped in pita bread with fresh cabbage, mayo, and chili sauce.',
     price: 280,
     category: 'rolls',
-    image: 'https://images.unsplash.com/photo-1633964913295-ceb43826e7c9?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=800&q=80',
     badge: 'Best Seller',
     rating: 4.7
   },
@@ -377,7 +377,7 @@ export const menuItems: MenuItem[] = [
     description: 'Crispy zinger chicken strips, lettuce, mayo, wrapped in a fresh flaky paratha.',
     price: 300,
     category: 'rolls',
-    image: 'https://images.unsplash.com/photo-1626700051175-6518c4793f4f?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=800&q=80',
     badge: 'Hot',
     rating: 4.8
   },
@@ -387,7 +387,7 @@ export const menuItems: MenuItem[] = [
     description: 'Smoky seekh kabab wrapped in warm flatbread or paratha with onions and spiced mint sauce.',
     price: 200,
     category: 'rolls',
-    image: 'https://images.unsplash.com/photo-1626700051175-6518c4793f4f?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80',
     rating: 4.4
   },
   {
@@ -396,7 +396,7 @@ export const menuItems: MenuItem[] = [
     description: 'Premium rolls stuffed with spiced chicken, cheese, herbs, and special garlic mayonnaise, oven baked.',
     price: 580,
     category: 'rolls',
-    image: 'https://images.unsplash.com/photo-1626700051175-6518c4793f4f?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=800&q=80',
     badge: 'New',
     rating: 4.8
   },
@@ -406,7 +406,7 @@ export const menuItems: MenuItem[] = [
     description: 'Chef\'s special: Marinated oven-baked wings, 4 pieces BBQ spring rolls, French fries, and special mayo dip sauces.',
     price: 1100,
     category: 'rolls',
-    image: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80',
     badge: 'Chef\'s Choice',
     rating: 4.9
   },
@@ -417,7 +417,7 @@ export const menuItems: MenuItem[] = [
     price: 540,
     oldPrice: 590,
     category: 'rolls',
-    image: 'https://images.unsplash.com/photo-1633964913295-ceb43826e7c9?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1561651823-34feb02250e4?auto=format&fit=crop&w=800&q=80',
     rating: 4.7
   },
   {
@@ -427,7 +427,7 @@ export const menuItems: MenuItem[] = [
     price: 580,
     oldPrice: 630,
     category: 'rolls',
-    image: 'https://images.unsplash.com/photo-1626700051175-6518c4793f4f?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=800&q=80',
     rating: 4.7
   },
 
@@ -447,7 +447,7 @@ export const menuItems: MenuItem[] = [
     description: 'Large family portion of salted crispy potato fries.',
     price: 350,
     category: 'appetizers',
-    image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=800&q=80',
     rating: 4.6
   },
   {
@@ -456,7 +456,7 @@ export const menuItems: MenuItem[] = [
     description: 'Crispy fries drizzled with our special garlic mayo dip sauce.',
     price: 300,
     category: 'appetizers',
-    image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=800&q=80',
     rating: 4.7
   },
   {
@@ -465,7 +465,7 @@ export const menuItems: MenuItem[] = [
     description: 'Large family portion of fries loaded with special garlic mayo sauce.',
     price: 400,
     category: 'appetizers',
-    image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=800&q=80',
     rating: 4.7
   },
   {
@@ -474,7 +474,7 @@ export const menuItems: MenuItem[] = [
     description: 'Freshly baked bread sticks topped with double melted mozzarella and dry Italian herbs.',
     price: 800,
     category: 'appetizers',
-    image: 'https://images.unsplash.com/photo-1531749668029-2db88e4b76ce?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?auto=format&fit=crop&w=800&q=80',
     badge: 'New',
     rating: 4.8
   },
@@ -495,7 +495,7 @@ export const menuItems: MenuItem[] = [
     description: 'Double portion: 12 oven-baked wings tossed in BBQ sweet chili or buffalo sauce.',
     price: 650,
     category: 'wings-nuggets',
-    image: 'https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1527477321075-d3a726f4b3f5?auto=format&fit=crop&w=800&q=80',
     badge: 'Best Seller',
     rating: 4.9
   },
@@ -505,7 +505,7 @@ export const menuItems: MenuItem[] = [
     description: 'Crispy wings coated in hot spicy barbecue sauce.',
     price: 350,
     category: 'wings-nuggets',
-    image: 'https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1608039829572-78524f79c4c7?auto=format&fit=crop&w=800&q=80',
     rating: 4.6
   },
   {
@@ -514,7 +514,7 @@ export const menuItems: MenuItem[] = [
     description: 'Large portion of 12 wings coated in spicy barbecue glaze.',
     price: 650,
     category: 'wings-nuggets',
-    image: 'https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=800&q=80',
     rating: 4.7
   },
   {
@@ -532,7 +532,7 @@ export const menuItems: MenuItem[] = [
     description: 'Portion of 12 crispy breaded chicken nuggets.',
     price: 650,
     category: 'wings-nuggets',
-    image: 'https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=800&q=80',
     rating: 4.6
   },
 
@@ -543,7 +543,7 @@ export const menuItems: MenuItem[] = [
     description: 'Chicken chunks, jalapeños, lettuce, tomatoes, and melted cheese inside toasted bread, served with fries.',
     price: 650,
     category: 'sandwiches',
-    image: 'https://images.unsplash.com/photo-1521390188846-e2a3a97453a0?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80',
     rating: 4.6
   },
   {
@@ -562,7 +562,7 @@ export const menuItems: MenuItem[] = [
     description: 'Shredded crispy zinger chicken, lettuce, tomatoes, cheese slice and mayo inside toasted bread, served with fries.',
     price: 700,
     category: 'sandwiches',
-    image: 'https://images.unsplash.com/photo-1521390188846-e2a3a97453a0?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80',
     badge: 'Hot',
     rating: 4.8
   },

@@ -65,7 +65,7 @@ export const Navbar: React.FC = () => {
         <div className="container navbar-container">
           {/* Logo */}
           <Link to="/" className="logo-link">
-            <img src="./pizza_logo.jpg" alt="Oven Bake Pizza Logo" style={{ width: '40px', height: '40px', borderRadius: '50%' }} />
+            <img src="./pizza_logo.jpg" alt="Oven Bake Pizza Logo" className="navbar-logo-img" />
             <span className="logo-text">
               OVEN BAKE<span className="logo-highlight"> PIZZA</span>
             </span>
